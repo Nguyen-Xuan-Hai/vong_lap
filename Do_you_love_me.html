@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p><strong>Do you love me?</strong></p>
+<button onclick="yeah()">Yes</button>
+<button onmouseover="move()" id="chay" style="position: absolute;">No</button>
+<script>
+    function move() {
+        let x = Math.round(Math.random() * window.innerWidth);
+        let y = Math.round(Math.random() * window.innerHeight);
+        document.getElementById('chay').style.left = x + 'px';
+        document.getElementById('chay').style.top = y + 'px';
+    }
+
+    function yeah(){
+        alert("<3");
+    }
+</script>
+</body>
+</html>
